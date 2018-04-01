@@ -1,4 +1,3 @@
-import time
 from pprint import pprint
 from selenium import webdriver
 
@@ -10,19 +9,12 @@ driver = webdriver.Firefox(executable_path=r'./geckodriver')
 # PhantomJS
 # driver = webdriver.PhantomJS(executable_path=r'./phantomjs')
 driver.get(url)
-# time.sleep(5)
 
 field = driver.find_element_by_name('q')
 field.send_keys('iphone 6')
 driver.find_element_by_xpath('/html/body/div[1]/section[1]/div/form/button').click()
-
-# Just get item price
-# price_list = driver.find_elements_by_class_name('price')
-# for price in price_list:
-#     print price.text
-
-
 item_list = driver.find_elements_by_class_name('item')
+
 for i in item_list:
     article = {
         'img': '',
@@ -37,7 +29,6 @@ for i in item_list:
     price = i.find_elements_by_class_name('price')
     if price:
         article['price'] = price[0].text
-        # article['price'] = price[0].text.split(' ')[1]
     title = i.find_elements_by_tag_name('h2')
     if title:
         article['title'] = title[0].text
