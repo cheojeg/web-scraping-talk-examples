@@ -1,7 +1,7 @@
 from pprint import pprint
 from selenium import webdriver
 
-# The URL we want to browse to
+# The URL we want to browse
 url = 'https://www.corotos.com.do/'
 # Using Selenium's webdriver to open the page
 # Firefox
