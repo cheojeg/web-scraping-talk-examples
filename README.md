@@ -2,7 +2,7 @@
 
 This repository contains some examples of web scraping developed with differents python libraries for a talk in spanish for python community in Dominican Republic.
 
-[Slides: https://docs.google.com/presentation/d/17IOuCYuo7FTOq7WYDYhBJD_z56BMc1FC1wS26hFAhH8/edit?usp=sharing](https://docs.google.com/presentation/d/17IOuCYuo7FTOq7WYDYhBJD_z56BMc1FC1wS26hFAhH8/edit?usp=sharing)
+Slides: [https://docs.google.com/presentation/d/17IOuCYuo7FTOq7WYDYhBJD_z56BMc1FC1wS26hFAhH8/edit?usp=sharing](https://docs.google.com/presentation/d/17IOuCYuo7FTOq7WYDYhBJD_z56BMc1FC1wS26hFAhH8/edit?usp=sharing)
 
 ## Installation
 1 - Clone the repository
