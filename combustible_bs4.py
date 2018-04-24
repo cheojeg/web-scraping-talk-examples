@@ -5,7 +5,6 @@ from pprint import pprint
 url = "https://micm.gob.do/precios-de-combustibles"
 
 response = requests.request("GET", url)
-
 soup = BeautifulSoup(response.text, 'html.parser')
 fuel_list = soup.find_all('tbody')[0].find_all('tr')
 
